@@ -52,4 +52,13 @@ class _Async_HomeScreenState extends State<Async_HomeScreen> {
       log("Error: ${error.toString()}");
     }
   }
+
+  void getData2() async {
+    try {
+      String data = await getUserName();
+      log(data);
+    } catch (error) {
+      log("Error: ${error.toString()}");
+    }
+  }
 }
